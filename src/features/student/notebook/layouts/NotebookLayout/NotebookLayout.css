@@ -1,0 +1,18 @@
+@import "../../../../../styles/notebook.css";
+@import "../../../../../components/SpiralBinding/SpiralBinding.css";
+@import "../../components/ClassTabs/ClassTabs.css";
+@import "../../components/SidePageMarkers/SidePageMarkers.css";
+
+.notebook-page-shell {
+  position: relative;
+}
+
+.notebook-page-shell.is-flipping {
+  z-index: 0;
+}
+
+.notebook-content-viewport {
+  position: absolute;
+  inset: 0;
+  min-height: 100%;
+}

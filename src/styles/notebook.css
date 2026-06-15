@@ -1,0 +1,73 @@
+.notebook-stage {
+  --side-marker-outset: 104px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: none;
+  width: calc(100% - 64px);
+  min-width: 1300px;
+  max-width: 1380px;
+  left: calc(var(--side-marker-outset) / -2);
+}
+
+.notebook-container {
+  --spiral-left: -40px;
+  --spiral-column-width: 115px;
+  --spiral-image-width: 70px;
+  --spiral-gap: -4px;
+  --notebook-height: clamp(655px, calc(100vh - 156px), 655px);
+  position: relative;
+  overflow: visible;
+  min-height: var(--notebook-height);
+  height: var(--notebook-height);
+  padding-left: calc(var(--spiral-column-width) + var(--spiral-left) + var(--spiral-gap)) !important;
+  z-index: 10;
+  border-color: var(--paper-border) !important;
+  background:
+    linear-gradient(90deg, rgba(255, 198, 198, 0.38) 0 2px, transparent 2px 100%),
+    repeating-linear-gradient(0deg, transparent 0 23px, var(--paper-line) 23px 24px),
+    var(--paper-bg);
+  border-radius: 24px;
+  box-shadow: var(--paper-shadow);
+  font-family: var(--font-sans);
+}
+
+.paper-texture {
+  background:
+    linear-gradient(90deg, rgba(255, 198, 198, 0.18) 0 1px, transparent 1px 100%),
+    repeating-linear-gradient(0deg, transparent 0 25px, rgba(96, 122, 154, 0.08) 25px 26px),
+    var(--paper-note-bg);
+}
+
+.notebook-container :is(
+  .overview-note-card,
+  .student-note-card,
+  .resources-note,
+  .discussion-side-note,
+  .standard-note-card,
+  .assignments-side-card,
+  .assignments-summary-card,
+  .assignments-feedback-card,
+  .assignments-history-card
+) {
+  font-family: var(--font-sans);
+  letter-spacing: 0;
+}
+
+.notebook-container :is(
+  .overview-note-label,
+  .student-note-title,
+  .resources-note-title,
+  .discussion-side-title,
+  .standard-note-card h3,
+  .assignment-tab,
+  .assignment-work-tab,
+  .resources-tab,
+  .discussion-tab span:last-child,
+  .student-note-button,
+  .overview-note-action,
+  .resources-note-link
+) {
+  font-family: var(--font-handwriting);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}

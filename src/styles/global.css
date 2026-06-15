@@ -1,0 +1,57 @@
+@import "./variables.css";
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Merriweather:wght@700;900&family=Nunito:wght@400;600;700;800;900&family=Patrick+Hand&family=Playfair+Display:wght@700;800;900&display=swap");
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+html,
+body {
+  overflow-x: auto;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(255, 249, 238, 0.18), rgba(255, 249, 238, 0.18)),
+    url("../assets/images/Back_ground.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: var(--ink-900);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.font-handwriting {
+  font-family: var(--font-handwriting);
+}
+
+.font-fancy {
+  font-family: var(--font-fancy);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.text-tute-orange {
+  color: var(--tute-orange);
+}
+
+.text-tute-blue {
+  color: var(--tute-blue);
+}
